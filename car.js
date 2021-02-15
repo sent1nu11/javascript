@@ -15,10 +15,15 @@ var fiat = {
         this.started = false;
     },
     drive: function() {
-        if (this.started) and (this.fuel > 0) {
-            console.log("Zoom zoom!");
+        if (this.started) {
+            if (this.fuel > 0) {
+                console.log("Zoom zoom!");
+                this.fuel = this.fuel - 1;
+            } else {
+                console.log("Oh oh.  Out of fuel.");
+            }
         } else {
-            console.log("You need to start the engine first.");
+            console.log("You need to start the engine first");
         }
     },
     addFuel: function(amount) {
@@ -27,8 +32,10 @@ var fiat = {
 
 };
 
-console.log(fiat.drive())
+fiat.start()
+fiat.drive()
+fiat.addFuel(3)
+fiat.start()
+fiat.drive()
+console.log(fiat.fuel)
 
-for (var prop in fiat) {
-    console.log(prop)
-}
