@@ -4,3 +4,7 @@ function init() {
 }
 
 window.onload = init;
+
+var trucks = "F150" ;
+
+console.log(typeof trucks)
