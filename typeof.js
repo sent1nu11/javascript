@@ -21,3 +21,5 @@ console.log(typeof test8);
 console.log(typeof test9);
 console.log(typeof test10);
 console.log(typeof test11);
+
+console.log(3 + " bananas " + 2 + " apples ")
