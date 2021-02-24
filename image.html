@@ -12,11 +12,13 @@
     <script>
         window.onload = init;
         function init() {
-            var image = document.getElementById("zero")
-            image.onclick = showAnswer;
-        }
+            var image = document.getElementsByTagName("img");
+            for (var i = 0; i < image.length; i++ ) {
+                image[i].onclick = showAnswer;    
+            }
+        
         function showAnswer() {
-            var image = document.getElementById("zero")
+            var image = document.getElementByTagName("img")
             image.src = "zero.jpg"
         }
 
