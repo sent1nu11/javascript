@@ -1,0 +1,9 @@
+var input = "jenny@wickedlysmart.com";
+
+console.log(input.length)
+
+for (var i = 0; 0 < input.length; i++) {
+    if (input.charAt(i) === "@") {
+        console.log("There is an @ sign at index " + i);
+    }
+}
